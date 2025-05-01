@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Photography - oleh Rae </title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #2b2d42;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #2b2d42;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .gallery img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: #2b2d42;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+    .social-links a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📸 Hobi Photography </h1>
+    <p>by Rae – Where the photos are located (mostly drafts)</p>
+  </header>
+
+  <section>
+    <h2>Hii, I'm Rae </h2>
+    <p>Welcome in my web!! aku hanya "normies" yang dipaksa bersosialisasi oleh ibuku dan yap terciptalah hobi ini</p>
+  </section>
+
+  <section>
+    <h2>Kenapa Aku Like Fotografi Cosplay?</h2>
+    <ul>
+      <li>🎭 Nyari Waifu walaupun G ketemu</li>
+      <li>🎨 Bermain dengan warna, efek, dan tema</li>
+      <li>📷 Mengabadikan kreativitas teman-teman cosplayer</li>
+      <li>🤝 Ketemu temen temen stress lainnya</li>
+    </ul>
+  </section>
+
+  <section>
+    <section>
+  <h2>Beberapa Karya Favoritku</h2>
+  <div class="gallery">
+    <img src="https://i.postimg.cc/1tQjZxNt/DSC-2041.jpg" alt="Bocchi The Atdmin" onclick="openLightbox(this.src)">
+    <img src="https://i.postimg.cc/fWp53td2/DSC-2257.jpg" alt="Hu Tao" onclick="openLightbox(this.src)">
+    <img src="https://i.postimg.cc/NFw3k9Xc/DSC-2295.jpg" alt="Inpo War CS Bolo" onclick="openLightbox(this.src)">
+    <img src="https://i.postimg.cc/Mp1RdF4x/DSC-2332.jpg" alt="Sunday Emsi" onclick="openLightbox(this.src)">
+  </div>
+</section>
+
+<!-- Lightbox Container -->
+<div id="lightbox" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center;">
+  <img id="lightbox-img" src="" style="max-width:90%; max-height:90%; border: 4px solid white; border-radius: 10px;">
+</div>
+
+<script>
+  // Fungsi untuk membuka lightbox
+  function openLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    img.src = src;
+    lightbox.style.display = 'flex';
+  }
+
+  // Tutup lightbox jika area gelap diklik
+  document.getElementById('lightbox').addEventListener('click', function() {
+    this.style.display = 'none';
+  });
+</script>
+
+  </section>
+
+  <section>
+    <h2>Gabung Ngobrol Bareng!</h2>
+    <p>Kalau kamu ikut photography dan ingin nambah temen stress, DM ae via ig.</p>
+  </section>
+
+  <footer>
+  <p>📸 Temui aku di:</p>
+  <div class="social-links">
+    <a href="https://www.instagram.com/reyhan.maulanaaaa/" target="_blank" rel="noopener noreferrer">
+      Instagram
+    </a>
+  </div>
+</footer>
+
+    <p>© 2025 Rae</p>
+  </footer>
+
+</body>
+</html>
